@@ -7,10 +7,6 @@ extern "C" long ResultRdxResistor;
 extern "C" long ResultRdxResistorSession2;
 extern "C" long ResultRaxResistor;
 
-
-
-
-
 std::string LetterConversion(){
     std::string Resultletter;
     switch(ResultRdxResistor){
@@ -36,25 +32,17 @@ std::string LetterConversion(){
             std::cout << " Failure to convert number." << std::endl;
             break;
     }
-
     return  Resultletter;
-
 }
-
 
 int main(){
     int numberDecimal;
      std::string Resultletter = LetterConversion();
-    std::cout << "Enter a decimal number to be converted to hexadecimal: ";
-    std::cin >> numberDecimal;
-    ConvertHexToDec(numberDecimal);
+     std::cout << "Enter a decimal number to be converted to hexadecimal: ";
+     std::cin >> numberDecimal;
 
-    std::cout << "\nResultado " <<  ResultRaxResistor << ResultRdxResistorSession2 << Resultletter << " Hex" << std::endl;
-
-
-
-
-
+      ConvertHexToDec(numberDecimal);
+      std::cout << "\nResultado " <<  ResultRaxResistor << ResultRdxResistorSession2 << Resultletter << " Hex" << std::endl;
     return 0;
 }
 
