@@ -1,5 +1,4 @@
 #include <iostream>
-#include <array>
 #include <string>
 
 extern "C" int ConvertHexToDec(int number);
